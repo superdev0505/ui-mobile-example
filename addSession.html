@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="oslrapp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  </head>
+  <body class="blue-background">
+  <div class="header"> 
+    <nav class="nav nav-fill">
+      <a class="nav-item nav-link" href="#">Cancel</a>
+      <a class="nav-item nav-link" href="#">Add Teaching Session</a>
+      <a class="nav-item nav-link active" href="#">Add</a>
+    </nav>
+  </div>
+  <div class="container-fluid scrollable">
+    <div class="main-background div-input-full font-light-grey">
+      <p class="font-dark-grey input-padding">Course with multiple sessions</p>
+      <!-- TO DO: add icon -->
+    </div>
+    <div class="input-container">
+      <input type="text" class="input-full" placeholder="Add Session Name">  
+      <img src="Images/x.png" id="category">
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Learning Event
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Example Item</a>
+        <a class="dropdown-item" href="#">Example Item</a>
+        <a class="dropdown-item" href="#">Example Item</a>
+      </div>
+     </div> 
+     <textarea rows="3" class="input-full-area input-padding" placeholder="Session Description"></textarea>
+     <input type="text" class="input-full" placeholder="Cardiology">
+     <input type="text" class="input-full" placeholder="Add Speciality">
+     <!-- RESOURCES SECTION -->
+     <div class="div-input-group">
+       <p class="font-dark-grey grey-subhead">RESOURCES</p>
+       <div class="main-background div-input-full-2"> 
+         <p class="font-light-grey font-small book-name" id="suggested-book">Suggested Textbook</p>
+         <p class="font-dark-grey book-name">Textbook Name</p>
+         <img src="Images/Resources.png" id="book-icon">
+         <img src="Images/+blue.png" id="add">
+       </div>
+       <input type="text" class="input-full" placeholder="Add Textbook">
+       <input type="text" class="input-full" placeholder="Add Website Article"
+     </div>
+     <!--add teacher-->
+     <div class="div-input-group">
+       <p class="font-dark-grey grey-subhead">ADD MORE TEACHERS</p>  
+       <input type="text" class="input-full" placeholder="Add Teacher">
+     </div>
+     <!--Date & Location -->
+     <div class="div-input-group">
+       <p class="font-dark-grey grey-subhead">DATE AND LOCATION</p>
+       <div class="main-background div-input-full"> 
+         <p class="font-dark-grey input-padding">Starts</p>
+         <p class="date">June 28th, 2018</p>  
+         <p class="starts">18:00</p>
+       </div>
+       <hr class="hr-divide">
+       <div class="main-background div-input-full"> 
+         <p class="font-dark-grey input-padding">Ends</p>
+         <p class="ends">19:00</p>
+       </div>
+        <input type="text" class="input-full" placeholder="Location">
+        <textarea rows="3" class="input-full-area input-padding" placeholder="Location Description"></textarea>
+        <div class="main-background div-input-full font-light-grey">
+          <p class="font-dark-grey input-padding">Private</p>
+          <!-- TO DO: add icon -->
+        </div>
+        <hr class="hr-divide">
+        <div class="main-background" id="attending">
+         <!--TO DO: add profile icons with minus symbols --> 
+          <div id="profile-minus">
+            <img src="Images/Profile.png">
+          </div>
+        </div>
+     </div>
+    </div> 
+  </body>
+</html>

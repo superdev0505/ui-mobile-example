@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="oslrapp.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    </head>
+    <body class="blue-background">
+        <div class="header"> 
+            <nav class="nav nav-justified">
+                <a class="nav-item nav-link" href="#">Cancel</a>
+                <a class="nav-item nav-link active" href="#">Edit Profile</a>
+                <a class="nav-item nav-link" href="#">Done</a>
+            </nav>
+        </div>
+        <div class="container-fluid scrollable col-lg-6 offset-lg-3">
+            <div class="profile-img-section">
+                <div class="profile-img-container">
+                    <img src="Images/Profile.png" class="profile-img">
+                    <p class="blue-subhead-normal" id="profile-img-label">Choose profile photo</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="col-3">
+                        <label class="profile-label">Name</label> 
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="input-full" placeholder="Name Surname"> 
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-3">
+                        <label class="profile-label">GMC Number</label> 
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="input-full" placeholder="1234567"> 
+                    </div>   
+                </div>
+                <div class="form-row">
+                    <div class="col-3">
+                        <label class="profile-label">Title</label> 
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="input-full" placeholder="Doctor"> 
+                    </div>   
+                </div>  
+                <div class="form-row">
+                    <div class="col-3">
+                        <label class="profile-label">Level</label> 
+                    </div>
+                    <div class="col-9">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Learning Event
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">FY2</a>
+                                <a class="dropdown-item" href="#">Example</a>
+                                <a class="dropdown-item" href="#">Example</a>
+                            </div> 
+                        </div>   
+                    </div>  
+                </div>
+                <div class="form-row">
+                    <div class="col-3">
+                        <label class="profile-label">Primary Email</label> 
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="input-full" placeholder="name@gmail.com"> 
+                    </div>   
+                </div>
+                <div class="form-row">
+                    <div class="col-3">
+                        <label class="profile-label">Add Email</label> 
+                    </div>
+                    <div class="col-9">
+                        <input type="text" class="input-full"> 
+                    </div>   
+                </div> 
+            </form>  
+            <div class="div-input-group">
+                <p class="font-dark-grey grey-subhead">WORK AND EXPERTISE</p>
+                <div class="main-background div-input-full"> 
+                    <p class="font-dark-grey input-padding">Mt. St. Elsewhere Hospital</p>
+                    <img src="Images/x.png" id="category3">
+                </div>
+                <input type="text" class="input-full" placeholder="Add a hospital">
+                <div class="main-background div-input-full"> 
+                    <p class="font-dark-grey input-padding">Neurology</p>
+                    <img src="Images/x.png" id="category4">
+                </div>
+                <input type="text" class="input-full" placeholder="Add a speciality">
+            </div>
+            <div class="div-input-group">
+                <p class="font-dark-grey grey-subhead">EXAMS</p>
+                <div class="main-background div-input-full"> 
+                    <p class="font-dark-grey input-padding">Exam</p>
+                    <!-- Add date -->
+                    <img src="Images/x.png" id="category5">
+                </div>
+                <input type="text" class="input-full" placeholder="Add exam">
+                <input type="text" class="input-full" placeholder="Add exam date">
+            </div>
+            <div class="div-input-group">
+                <textarea rows="3" class="input-full-area input-padding" placeholder="About You"></textarea>  
+            </div>
+            <div class="div-input-group">
+                <p class="font-small input-padding">We need to find where you work so we can find teaching sessions for you.</p>
+                <p class="font-small input-padding"><span style="color:#07ADBE">Can't find your hospital? <a>Email us</a></span></p>
+            </div>
+        </div>
+    </body>
+</html>
